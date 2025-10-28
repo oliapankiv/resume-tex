@@ -1,0 +1,36 @@
+\documentclass[a4paper]{article}
+
+\usepackage{ragged2e}
+\usepackage{makecell}
+\usepackage[T1]{fontenc}
+\usepackage{fontawesome}
+\usepackage[left=0.8in,right=0.8in,bottom=0.8in,top=0.8in]{geometry}
+\usepackage[pdftitle={résumé},pdfauthor={Olha Pankiv},pdfsubject={Olha's résumé},pdfcreator={LaTeX},pdfkeywords={2137}]{hyperref}
+
+\pagestyle{empty}
+
+%===== Definitions =====%
+\newcommand{\lineunder} {
+    \vspace*{-8pt} \\
+    \hspace*{-18pt} \hrulefill \\
+}
+
+\newcommand{\header} [1] {
+    {\hspace*{-18pt}\vspace*{6pt} \textsc{#1}}
+    \vspace*{-6pt} \lineunder
+}
+
+\newcommand{\timeframe} [2] {
+    \textsc{\small#1 -- #2}
+}
+
+%===== Start =====%
+\begin{document}
+\raggedright
+\vspace*{-50pt}
+
+%===== Header =====%
+\begin{center}
+    {\Huge \scshape {Olha Pankiv}} \\
+\end{center}
+\end{document}
