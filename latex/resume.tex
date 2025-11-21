@@ -1,38 +1,82 @@
-\documentclass[a4paper]{article}
+\documentclass{resume}
 
-\usepackage{ragged2e}
+\usepackage{xcolor}
 \usepackage{makecell}
 \usepackage[T1]{fontenc}
-\usepackage{fontawesome}
-\usepackage[left=0.8in,right=0.8in,bottom=0.8in,top=0.8in]{geometry}
-\usepackage[pdftitle={résumé},pdfauthor={Olha Pankiv},pdfsubject={Olha's résumé},pdfcreator={LaTeX},pdfkeywords={2137}]{hyperref}
+\usepackage[left=0.4 in,top=0 in,right=0.4 in,bottom=0.4 in]{geometry}
+\usepackage[pdftitle={Olha Pankiv - Front end (Angular) developer},pdfauthor={Olha Pankiv},pdfsubject={Olha's résumé},pdfcreator={LaTeX}]{hyperref}
 
-\pagestyle{empty}
+\definecolor{sectioncolor}{HTML}{72243D}
+\colorlet{SECTIONCOLOR}{sectioncolor}
 
-%===== Definitions =====%
-\newcommand{\lineunder} {
-    \vspace*{-8pt} \\
-    \hspace*{-18pt} \hrulefill \\
-}
-
-\newcommand{\header} [1] {
-    {\hspace*{-18pt}\vspace*{6pt} \textsc{#1}}
-    \vspace*{-6pt} \lineunder
-}
-
-\newcommand{\timeframe} [2] {
-    \textsc{\small#1 -- #2}
-}
-
-%===== Start =====%
 \begin{document}
-\raggedright
-\vspace*{-50pt}
 
 %===== Header =====%
 \begin{center}
-    {\Huge \scshape {Olha Pankiv}} \\
+    {\Huge \bf {Olha Pankiv}} \\
     \vspace{2.5mm}
-    \href{https://github.com/oliapankiv}{\faGithubAlt\ github}
+    \href{tel:+380955456604}{+38(095)54-56-604} \textbullet\
+    \href{mailto:olha@pankiv.me}{olha@pankiv.me} \textbullet\
+    {Irpin} \textbullet\
+    \href{https://linkedin.com/in/olia-pankiv/}{linkedin} \textbullet\
+    \href{https://github.com/oliapankiv}{github} \textbullet\
+    \href{https://pankiv.me}{pankiv.me}
 \end{center}
+
+
+%===== Profile =====%
+\begin{rSection}{Profile}
+    {Front-end developer passionate about creating clean, intuitive user interfaces using Angular. Over 4 years, I have contributed to both legacy system modernization and new feature development, focusing on performance, usability, and seamless responsive experience on all devices.}
+    \vspace{2mm}
+\end{rSection}
+
+%===== Education =====%
+\begin{rSection}{Education}
+    {\bf Ivano-Frankivsk National Technical University of Oil and Gas} \hfill {September 2019 - May 2021}
+    \\ Bachelor’s degree, Computer Engineering.
+
+    {\bf Kalush Polytechnic College} \hfill {September 2014 - May 2018} \\ Associate degree, Automation and computer-integrated technologies.
+    \vspace{2mm}
+\end{rSection}
+
+%===== Skills =====%
+\begin{rSection}{Skills}
+    \begin{tabular}{ @{} >{\bfseries}l @{\hspace{8ex}} l }
+        Front end &  Angular, TypeScript, REST, CSS3/Scss/TailwindCss, HTML5, RxJS, NgRx  \\
+        Tools & Git/Github/Gitlab, Webpack, Angular CLI, Jira \\
+        Testing & Jasmine, Karma, Spectator
+    \end{tabular}
+    \vspace{2mm}
+\end{rSection}
+
+%===== Work Experience =====%
+\begin{rSection}{Work Experience}
+    {\fontsize{12pt}{14pt}\selectfont \bf Front-end developer} \hfill {October 2020 - present} \\
+    {TenantCloud} \\
+    \vspace{-6mm}
+    \begin{itemize} \itemsep 0pt
+        \item contributed to the successful migration of a large AngularJS application to Angular 2+, ensuring improved maintainability and performance
+        \item collaborated closely with backend developers to refine API contracts and integrate RESTful and GraphQL endpoints
+        \item performed regular code reviews to maintain code quality and reduce errors across ongoing projects
+        \item refactored and replaced legacy code and heavy dependencies, resulting in faster load time
+        \item helped build a scalable library of reusable UI components and services, increasing consistency and reducing development time across multiple projects
+        \item partnered with marketing and design teams to improve the application's interface
+        \item worked with QA and backend engineers to reproduce, investigate, and resolve cross-team bugs
+        \item led the redesign of a promo site, implementing a fully mobile-responsive experience that improved accessibility and boosted SEO performance
+    \end{itemize}
+    \vspace{2mm}
+\end{rSection}
+
+%===== Languages =====%
+\begin{rSection}{Languages}
+    \begin{center}
+        \setlength{\tabcolsep}{16pt}
+        \begin{tabular}{ c | c | c }
+            \makecell{\textbf{English} \\ \textit{Full Professional Proficiency}} &
+            \makecell{\textbf{Ukrainian} \\ \textit{Native Proficiency}} &
+            \makecell{\textbf{Polish} \\ \textit{Professional Working Proficiency}}
+        \end{tabular}
+    \end{center}
+\end{rSection}
+
 \end{document}
