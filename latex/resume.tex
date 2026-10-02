@@ -3,7 +3,7 @@
 \usepackage{xcolor}
 \usepackage{makecell}
 \usepackage[T1]{fontenc}
-\usepackage[left=0.4 in,top=0 in,right=0.4 in,bottom=0.4 in]{geometry}
+\usepackage[left=0.3 in,top=0 in,right=0.3 in,bottom=0.2 in]{geometry}
 \usepackage[pdftitle={Olha Pankiv - Front end (Angular) developer},pdfauthor={Olha Pankiv},pdfsubject={Olha's résumé},pdfcreator={LaTeX}]{hyperref}
 
 \definecolor{sectioncolor}{HTML}{72243D}
@@ -27,14 +27,16 @@
 %===== Profile =====%
 \vspace{-3mm}
 \begin{rSection}{Profile}
-    {Frontend Engineer with 6 years of experience building and modernizing Angular applications across enterprise SaaS and iGaming. Deeply versed in modern Angular — signals, standalone components, and architectural decision-making — with recent work on an Nx monorepo migration and rolling out server-side rendering. Actively integrate AI tools like Claude Code into daily development workflows to speed up delivery, refactoring, and code review.}
+    {Frontend Engineer with nearly 6 years of experience building and modernizing Angular applications across enterprise SaaS and iGaming. Deeply versed in modern Angular — signals, standalone components, and architectural decision-making — with recent work on an Nx monorepo migration and rolling out server-side rendering. Actively integrate AI tools like Claude Code into daily development workflows to speed up delivery, refactoring, and code review.}
 \end{rSection}
 
 %===== Skills =====%
 \vspace{-2mm}
 \begin{rSection}{Skills}
     \begin{tabular}{ @{} >{\bfseries}l @{\hspace{8ex}} l }
-        Front end &  JavaScript, TypeScript, Angular, SSR, RxJS, NgRx SignalStore, Angular Material \& CDK, \\ & RESTful APIs, WebSockets, GraphQL, Nx, HTML5, CSS3, SCSS, Tailwind CSS \\
+        Front end &  JavaScript, TypeScript, Angular, SSR, RxJS, NgRx SignalStore, Angular Material \& CDK, \\ & RESTful APIs, WebSockets, GraphQL, Nx, HTML5, CSS3, Sass/SCSS, Tailwind CSS \\
+        \vspace{0.5mm}
+        Back end &  C\#, .NET, ASP.NET Core, EF Core, Dapper, MS SQL \\
         \vspace{0.5mm}
         Tools & Claude Code, Git, Github, Gitlab, Docker, Jenkins, Kubernetes, Postman, Jira \\
         \vspace{0.5mm}
@@ -49,11 +51,11 @@
 \begin{rSection}{Work Experience}
  {\fontsize{12pt}{14pt}\selectfont \bf NDA}{ (iGaming) - Frontend engineer} \hfill {February 2026 -          present} \\
     \vspace{-6mm}
-    \begin{itemize} \itemsep -2.5pt
+    \begin{itemize} \itemsep -2pt
         \item Improved crawlability and initial-load performance by implementing Angular SSR for the existing SPA, delivering fully-rendered HTML to search engine bots while preserving client-side interactivity for end users.
         \item Migrated frontend codebase into an Nx monorepo, cutting CI build times by 37.8\% through affected-only builds and establishing shared component libraries consumed by 3 teams.
         \item Led the migration of 5 feature modules from classic NgRx to SignalStore, consolidating 4 state artifacts per feature into a single store and scoping providers to the standalone components that own them.
-        \item Mentored and upskilled frontend engineers through code reviews, pairing sessions, and knowledge-sharing.
+        \item Implemented internationalization in large-scale Angular application using Angular i18n, including translation extraction with XLIFF files, per-locale builds, ICU expressions for pluralization, and locale-aware pipes for dates, numbers, and currencies.
         \item Modernized the UI layer by migrating from Bootstrap to Angular Material, eliminating custom CSS overrides and establishing a consistent, accessible component library aligned with Angular's native ecosystem.
      \end{itemize}
      \vspace{2mm}
@@ -61,7 +63,7 @@
     \vspace{-1mm}
     {\fontsize{12pt}{14pt}\selectfont \bf TenantCloud}{ - Frontend engineer} \hfill {October 2020 - December 2025} \\
     \vspace{-6mm}
-    \begin{itemize} \itemsep -2.5pt
+    \begin{itemize} \itemsep -2pt
         \item Migrated legacy AngularJS modules to modern Angular across 4 product areas: Reports, Contacts, Leasing, and Settings.
         \item Enhanced a large-scale property management platform using TypeScript, Angular, Angular Material and CDK, driving improvements in performance, scalability, and maintainability.
         \item Collaborated in a 6-person cross-functional Agile/Scrum team of frontend and backend engineers, QA, designers and product stakeholders across the full SDLC, from sprint planning to release.
