@@ -3,7 +3,7 @@
 \usepackage{xcolor}
 \usepackage{makecell}
 \usepackage[T1]{fontenc}
-\usepackage[left=0.3 in,top=0 in,right=0.3 in,bottom=0.2 in]{geometry}
+\usepackage[left=0.2 in,top=0 in,right=0.3 in,bottom=0.2 in]{geometry}
 \usepackage[pdftitle={Olha Pankiv - Front end (Angular) developer},pdfauthor={Olha Pankiv},pdfsubject={Olha's résumé},pdfcreator={LaTeX}]{hyperref}
 
 \definecolor{sectioncolor}{HTML}{72243D}
@@ -20,57 +20,56 @@
     \href{mailto:olha@pankiv.me}{olha@pankiv.me} \textbullet\
     {Irpin, Ukraine} \textbullet\
     \href{https://linkedin.com/in/olia-pankiv/}{linkedin} \textbullet\
-    \href{https://github.com/oliapankiv}{github} \textbullet\
-    \href{https://pankiv.me}{pankiv.me}
+    \href{https://github.com/oliapankiv}{github}
 \end{center}
 
 %===== Profile =====%
 \vspace{-3mm}
 \begin{rSection}{Profile}
-    {Frontend Engineer with nearly 6 years of experience building and modernizing Angular applications across enterprise SaaS and iGaming. Deeply versed in modern Angular — signals, standalone components, and architectural decision-making — with recent work on an Nx monorepo migration and rolling out server-side rendering. Actively integrate AI tools like Claude Code into daily development workflows to speed up delivery, refactoring, and code review.}
+    {Angular Developer with 6 years of experience building and evolving large-scale Angular platforms for enterprise SaaS and iGaming. Specialize in frontend architecture and platform-level solutions: reusable component libraries, scalable state management, and modular codebases built for extensibility and developer experience. Actively integrate AI tools like Claude Code into daily development workflows to speed up delivery, refactoring, and code review. Proactive in researching non-standard problems and working closely with product and cross-functional teams to find the most effective solution.}
 \end{rSection}
 
 %===== Skills =====%
 \vspace{-2mm}
 \begin{rSection}{Skills}
-    \begin{tabular}{ @{} >{\bfseries}l @{\hspace{8ex}} l }
-        Front end &  JavaScript, TypeScript, Angular, SSR, RxJS, NgRx SignalStore, Angular Material \& CDK, \\ & RESTful APIs, WebSockets, GraphQL, Nx, HTML5, CSS3, Sass/SCSS, Tailwind CSS \\
+    \begin{tabular}{ @{} >{\bfseries}l @{\hspace{7ex}} l }
+        Front end & Angular, TypeScript, JavaScript (ES6+), RxJS, Signals, Standalone Components, \\ & NgRx (classic \& SignalStore), SSR, Angular Material \& CDK, RESTful APIs, WebSockets, \\ & GraphQL, HTML5, CSS3, Sass/SCSS, Tailwind CSS \\
         \vspace{0.5mm}
-        Back end &  C\#, .NET, ASP.NET Core, EF Core, Dapper, MS SQL \\
+        \begin{tabular}[t]{@{}l@{}}Back end \rlap{\normalfont\small\textit{(working knowledge)}}\end{tabular} & \hspace{16mm} C\#, .NET, ASP.NET Core, EF Core, Dapper, MS SQL \\
         \vspace{0.5mm}
-        Tools & Claude Code, Git, Github, Gitlab, Docker, Jenkins, Kubernetes, Postman, Jira \\
+        Architecture & Frontend architecture, Nx monorepo, modular shared libraries, Clean / Layered Architecture, \\ & SOLID, Event-Driven State Management, Design Patterns, OOP, Agile/Scrum \\
         \vspace{0.5mm}
-        Practices & Agile/Scrum, OOP, SOLID, Design Patterns, Clean Architecture \\
+        Testing & Jest, Playwright, Vitest, Karma, Spectator, debugging \\
         \vspace{0.5mm}
-        Testing &  Vitest, Jest, Karma, Playwright
+        Tools & Claude Code, Git, GitHub, GitLab, Docker, Jenkins, Kubernetes, Postman, Jira \\
     \end{tabular}
 \end{rSection}
 
 %===== Work Experience =====%
 \vspace{-2mm}
 \begin{rSection}{Work Experience}
- {\fontsize{12pt}{14pt}\selectfont \bf NDA}{ (iGaming) - Frontend engineer} \hfill {February 2026 -          present} \\
+ {\fontsize{12pt}{14pt}\selectfont \bf NDA}{ (iGaming) - Angular Developer} \hfill {February 2026 -          September 2026} \\
     \vspace{-6mm}
-    \begin{itemize} \itemsep -2pt
-        \item Improved crawlability and initial-load performance by implementing Angular SSR for the existing SPA, delivering fully-rendered HTML to search engine bots while preserving client-side interactivity for end users.
-        \item Migrated frontend codebase into an Nx monorepo, cutting CI build times by 37.8\% through affected-only builds and establishing shared component libraries consumed by 3 teams.
+    \begin{itemize} \itemsep -4pt
+        \item Migrated the frontend codebase into an Nx monorepo with modular, shared component libraries consumed by 3 teams, improving developer experience and cutting CI build times by 37.8\% through affected-only builds.
+        \item Implemented Angular SSR for the existing SPA, improving crawlability and initial-load performance by delivering fully-rendered HTML to search engine bots while preserving client-side interactivity.
         \item Led the migration of 5 feature modules from classic NgRx to SignalStore, consolidating 4 state artifacts per feature into a single store and scoping providers to the standalone components that own them.
-        \item Implemented internationalization in large-scale Angular application using Angular i18n, including translation extraction with XLIFF files, per-locale builds, ICU expressions for pluralization, and locale-aware pipes for dates, numbers, and currencies.
-        \item Modernized the UI layer by migrating from Bootstrap to Angular Material, eliminating custom CSS overrides and establishing a consistent, accessible component library aligned with Angular's native ecosystem.
+        \item Modernized the UI layer by migrating from Bootstrap to Angular Material, eliminating custom CSS overrides and establishing a consistent, accessible, extensible component library.
+        \item Implemented internationalization using Angular i18n, including translation extraction with XLIFF files, per-locale builds, ICU expressions for pluralization, and locale-aware pipes for dates, numbers, and currencies.
      \end{itemize}
      \vspace{2mm}
 
-    \vspace{-1mm}
-    {\fontsize{12pt}{14pt}\selectfont \bf TenantCloud}{ - Frontend engineer} \hfill {October 2020 - December 2025} \\
+    \vspace{-2mm}
+
+    {\fontsize{12pt}{14pt}\selectfont \bf TenantCloud}{ - Angular Developer} \hfill {October 2020 - December 2025} \\
     \vspace{-6mm}
-    \begin{itemize} \itemsep -2pt
+    \begin{itemize} \itemsep -4pt
         \item Migrated legacy AngularJS modules to modern Angular across 4 product areas: Reports, Contacts, Leasing, and Settings.
+        \item Built and maintained a scalable, reusable UI component library with comprehensive unit and e2e test coverage, providing shared building blocks that improved consistency and reduced development time across projects.
         \item Enhanced a large-scale property management platform using TypeScript, Angular, Angular Material and CDK, driving improvements in performance, scalability, and maintainability.
-        \item Collaborated in a 6-person cross-functional Agile/Scrum team of frontend and backend engineers, QA, designers and product stakeholders across the full SDLC, from sprint planning to release.
-        \item Built and maintained a scalable reusable UI component library with comprehensive unit and e2e test coverage, improving consistency and reducing development time across projects.
         \item Strengthened Angular component testing with Spectator and mocks, reducing UI regressions and improving release reliability.
-        \item Led the promo site redesign, delivering a fully responsive and accessible experience that improved SEO performance by 28\%.
-    \end{itemize}
+        \item Collaborated in a 6-person cross-functional Agile/Scrum team of frontend and backend engineers, QA, designers and product stakeholders across the full SDLC, from sprint planning to release.
+     \end{itemize}
     \vspace{0.1mm}
 \end{rSection}
 
